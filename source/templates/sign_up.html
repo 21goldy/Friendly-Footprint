@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome   -->
+    <script src="https://kit.fontawesome.com/3ad2308806.js" crossorigin="anonymous"></script>
+
+    <title>Friendly Footstep</title>
+    <link rel="icon" href="static/images/favicon.ico">
+
+    {% import "bootstrap/wtf.html" as wtf %}
+
+</head>
+<body>
+
+<header>
+    <!-- NAVBAR STARTS -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-config">
+        <a class="navbar-brand ECOTIC" href="{{ url_for('index') }}">Friendly Footprint</a>
+        <button class="navbar-toggler custom-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav-icon"><i class="fa-solid fa-list-ul"></i></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-content" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item active">
+                    <a class=" nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('shop') }}">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signUp') }}">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+</header>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "danger"}) }}
+      </div>
+    </div>
+  </div>
+
+<img class = "trees" src="static/images/trees.png" alt="trees" >
+<footer class="config-footer">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12">
+        <a class="navbar-brand fcontent" href="#">Friendly Footprint</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-mg-4 footer-content">
+        <a class="nav-link  footer-icons" href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="col-mg-4 footer-content">
+        <a class="nav-link  footer-icons" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="col-mg-4 footer-content">
+        <a class="nav-link  footer-icons" href="#"><i class="fa-brands fa-twitter"></i></a>
+       
+      </div>
+    
+    </div>
+    </div>
+    <p class="copyright">© GOLDY G, SMARANI B</p>
+</footer>
+
+</body>
+</html>

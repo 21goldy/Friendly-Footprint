@@ -1,0 +1,393 @@
+.ECOTIC{
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    color: #ECB390;
+}
+/*falling leaves css start*/
+.falling{
+    position: relative;
+    width: 100% ;
+    overflow: hidden;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.set{
+    position: absolute;
+    width:100% ;
+    height: 100% ;
+    top:0 ;
+    left: 0 ;
+    pointer-events: none;
+}
+.move{
+   position:absolute ;
+   display:block;
+}
+
+.move:nth-child(1){
+    left:30% ;
+    animation: animate 10s linear infinite ; 
+    animation-delay: -7s;
+}
+
+.move:nth-child(2){
+    left:50% ;
+    animation: animate 20s linear infinite ; 
+    animation-delay: -5s;
+
+}
+
+.move:nth-child(3){
+    left:70% ;
+    animation: animate 7s linear infinite ; 
+    animation-delay: 0s;
+
+}
+
+.move:nth-child(4){
+    left:5% ;
+    animation: animate 15s linear infinite ;
+   
+ 
+}
+
+.move:nth-child(5){
+    left:60% ;
+    animation: animate 5s linear infinite ; 
+    animation-delay: -10s;
+}
+
+.move:nth-child(6){
+    left:0% ;
+    animation: animate 16s linear infinite ; 
+}
+
+.move:nth-child(7){
+    left:15% ;
+    animation: animate 7s linear infinite ; 
+    animation-delay: -10s;
+
+}
+
+.move:nth-child(8){
+    left: 43% ;
+    animation: animate 6s linear infinite ;
+   
+}
+.move:nth-child(9){
+    left:-10% ;
+    animation: animate 12s linear infinite ; 
+    animation-delay: -2s;
+}
+.move:nth-child(10){
+        left:49% ;
+        animation: animate 10s linear infinite ; 
+        animation-delay: -7s;
+    }
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        top: -10% ;
+        transform: translateX(20px) rotate(0deg) ; 
+    }
+    10%{
+        opacity: 1;
+    
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg) ; 
+    }
+    40%{
+       
+        transform: translateX(-20px) rotate(90deg) ; 
+    }
+    60%{
+       
+        transform: translateX(20px) rotate(180deg) ; 
+    }
+    80%{
+       
+        transform: translateX(-20px) rotate(180deg) ; 
+    }
+     100%{
+        
+        top: 110% ;
+        transform: translateX(20px) rotate(225deg) ; 
+    }
+
+}
+/*falling leaves css end*/
+
+.ECOTIC:hover{
+    color: #e9967a;
+}
+.fa-cart-shopping{
+   font-size: 30px;
+   padding: 10px;
+}
+.fa-cart-shopping:hover{
+    color: #e9967a ; 
+}
+.navbar-content{
+    text-align: center;
+}
+
+.navbar-config{
+    background-color: white;
+}
+.nav-item{
+    padding-right: 30px;
+   
+}
+
+.nav-link{
+    font-family: 'Mansalva', sans-serif;
+    font-size: 30px;
+    color: #ECB390;
+}
+
+.nav-link:hover{
+    color: #e9967a;
+}
+
+.nav-icon{
+    margin-top: 5px;
+    color: #ECB390;
+}
+
+.custom-toggle{
+   
+    border-color: #ecb390;
+}
+
+.main-container{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 100px;
+    color: #ECB390;
+    border-style: dashed;
+}
+
+.main-content:hover{
+    color: #e9967a;
+}
+
+
+.page2-container{
+    margin-top: 100px;
+}
+
+.page2-h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 150px;
+    color: #e9967a;
+    padding-top: 20px;
+}
+.page2-h3{
+    color:#ef805b;
+    font-size: 40px;
+    font-family: 'Merienda', sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    
+}
+
+
+.page3-div{
+   margin: 80px 50px 0 50px;
+   text-align: center;
+}
+
+.page3-h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 150px;
+    color: #e9967a;
+}
+
+.ECO-PRODUCTS{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ECO{
+    text-decoration: none;
+    font-size: 300px;
+}
+
+.ECO:hover {
+    text-decoration: underline;
+}
+
+.products {
+    text-align: center;
+}
+
+.img-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.img-config{
+    margin: 30px 0 30px 0;
+    width: 100%;
+}
+
+.grayscale{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.grayscale:hover{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.trees{
+    display: block;
+    margin-top: 100px;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.datainfo{
+    text-align: center;
+    color:#e88361;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 30px;
+    margin:30px;
+}
+.datatree{
+   height: 200px ;
+   width: 300px ; 
+   margin-left: 80px;
+}
+
+.datafoot{
+    height: 200px ;
+    width: 200px ; 
+    margin-left: 150px;
+ }
+
+ .datadog{
+    height: 200px ;
+    width: 200px ; 
+    margin-left: 150px;
+ }
+
+.contact-heading{
+    text-align: center;
+    font-family: 'Merienda' ,sans-serif;
+    color: #e88361;
+    font-size: 50px;
+    padding: 50px ;
+    margin-top: 50px;
+
+}
+form{
+    padding-left: 20% ;
+    padding-right: 20%;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+.form-label{
+font-family: 'League Spartan';
+color:#e88361;
+font-size: 30px;
+}
+.form-control{
+    border-color: black;
+}
+.form-text{
+    color: red ;
+}
+
+.config-footer{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #e9967a;
+    color: #FCF8E8;
+}
+.fcontent{
+    font-family: 'Satisfy', sans-serif;
+    color:#FCF8E8;
+    font-size: 60px;
+}
+.fcontent:hover{
+    color:#ECB390;
+}
+.footer-content{
+    
+    color:#FCF8E8;
+    margin: 10px;
+}
+
+.footer-content:hover{
+    color: #ECB390;
+}
+
+.footer-icons{
+    color: white;;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.footer-icons:hover{
+    color:#ecb390;
+}
+.copyright{
+    color: black ; 
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*Shop.html*/
+
+.event-card1 {
+    position: relative;
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+  
+.event-card2 {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-bottom:40px;
+  }
+.card-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+  .card-title{
+    color: #ef805b;
+    font-family: 'Merienda' ,sans-serif;
+  }
+  .btn-shop{
+    position: absolute;
+    left: 35%;
+  }
+  .list-group-item{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  /*signup.html*/
+
+  .Signup{
+    font-family: 'Merienda', sans-serif;
+    color: #ef805b;
+    font-size: 50px;
+  }
+
+  .info{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+  }
+  .sign-btn{
+    margin-top: 30px;
+  }
+ 
